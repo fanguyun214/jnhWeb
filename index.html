@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嘉年华</title>
+    <!—移动-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <link href="src/style/reset.css" rel="stylesheet" type="text/css">
+    <link href="src/style/base.css" rel="stylesheet" type="text/css">
+    <!--引入js  无其它依赖-->
+    <script type="text/javascript" src="src/script/lib/require.js" data-main="src/script/main.js"></script>
+</head>
+<body>
+    <!--主体内容区-->
+    <div id="pageCont"></div>
+    <!--活动主页1-->
+    <script id="pageHome1" type="text/html">
+        <div>
+            <p><%= text %></p>
+            <%:= html %>
+            <p><a href="#start">点击抽奖</a></p>
+            <p id="boxButton" style="color:#2a6496;">调用弹出层</p>
+        </div>
+    </script>
+    <!--活动主页2-->
+    <script id="pageHome2" type="text/html">
+        <div>活动界面二</div>
+        <p><a href="#start">点击抽奖</a></p>
+    </script>
+    <!--活动主页3-->
+    <script id="pageHome3" type="text/html">
+        <div>活动界面三</div>
+        <p><a href="#start">点击抽奖</a></p>
+    </script>
+    <!--游戏页面-->
+    <script id="pageStart" type="text/html">
+        <div>抽奖界面</div>
+        <p><a href="#message">提交信息</a></p>
+    </script>
+    <!--提交信息页面-->
+    <script id="pageMessage" type="text/html">
+        <div>提交信息页面</div>
+    </script>
+    <!--弹出层-->
+    <div class="mainBg none" id="mainBg"></div>
+    <div class="tipsBox none" id="tipsBox">
+        <p><a href="javascript:void(0)" id="closeBoxBtn" style="color:#000;">关闭弹出层</a></p>
+        <div id="tipsBoxText"></div>
+    </div>
+
+
+</body>
+</html>
