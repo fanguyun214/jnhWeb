@@ -3,6 +3,7 @@ body{min-height: 100%;font-size: 14px;background-color: #fff;-webkit-text-size-a
 .tac{text-align:center;}
 a{color:#2a6496;text-decoration:none}
 a:hover,a:focus{text-decoration:none;outline:0}
+li{list-style: none;}
 a img{border:0}
 .dsn{ display:none;}
 .dst{ display:table;}
